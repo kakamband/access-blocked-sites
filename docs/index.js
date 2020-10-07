@@ -1,5 +1,5 @@
 function craftUrl(url) {
-  return 'https://access-blocked-sites.herokuapp.com/?url=' + url
+  return 'https://accessunlocker.herokuapp.com/?url=' + url
 }
 
 function updateLink(url) {
