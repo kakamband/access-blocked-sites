@@ -18,8 +18,8 @@ def index(request):
   # Modify href relative links to absolute links
   parsed_uri = urlparse(url)
   result = '{uri.scheme}://{uri.netloc}'.format(uri=parsed_uri)
-  PREPEND = 'https://access-blocked-sites.herokuapp.com?url={}'.format(result)
-  PREPEND_REL = 'https://access-blocked-sites.herokuapp.com?url={}'.format(url)
+  PREPEND = 'https://accessunlocker.herokuapp.com?url={}'.format(result)
+  PREPEND_REL = 'https://accessunlocker.herokuapp.com?url={}'.format(url)
   links = soup.find_all('a')
   for link in links:
     try:
